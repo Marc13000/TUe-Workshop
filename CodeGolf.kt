@@ -12,3 +12,15 @@ fun countVowels(s: String): Int {
     }
     return count
 }
+
+fun sumOfDigits(n: Int): Int {
+    val str = n.toString()
+    
+    var sum = 0
+    
+    for (char in str) {
+        val digit = char - '0'
+        sum += digit
+    }
+    return sum
+}
