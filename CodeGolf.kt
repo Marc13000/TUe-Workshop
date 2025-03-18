@@ -31,3 +31,19 @@ fun factorial(n: Int): Int {
     }
     return n * factorial(n - 1)
 }
+
+fun longestWord(sentence: String): String? {
+    val words = sentence.split(" ")
+    
+    if (words.isEmpty()) {
+        return null // Return null if no words are found
+    }
+    
+    var longest = words[0] // Start with the first word
+    for (word in words) {
+        if (word.length > longest.length) {
+            longest = word
+        }
+    }    
+    return longest
+}
