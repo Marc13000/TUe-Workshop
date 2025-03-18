@@ -16,6 +16,11 @@ fun main() {
     assertEquals(120, factorial(5))
     assertEquals(5040, factorial(7))
     assertEquals(1, factorial(1))
+
+    // Test longestWord
+    assertEquals("awesome", longestWord("Kotlin is awesome"))
+    assertEquals("golfing", longestWord("I love code golfing"))
+    assertEquals("education", longestWord("Education is the key to success"))
     
     println("All tests passed!")
 }
